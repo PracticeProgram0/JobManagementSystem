@@ -1,0 +1,187 @@
+﻿
+@{
+    ViewBag.Title = "AdminProfile";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 1px solid red;
+        }
+
+        .profile-card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+            .profile-card .name {
+                font-size: 24px;
+                font-weight: bold;
+                margin-top: 10px;
+            }
+
+        .profile-info {
+            font-size: 16px;
+            color: #555;
+        }
+
+            .profile-info i {
+                color: #007bff;
+                margin-right: 10px;
+            }
+
+        .edit-btn, .save-btn {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+            .edit-btn:hover, .save-btn:hover {
+                background-color: #0056b3;
+            }
+
+        .edit-form {
+            display: none;
+        }
+
+            .edit-form input {
+                width: 100%;
+                padding: 10px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                border: 1px solid #ccc;
+            }
+    </style>
+</head>
+<body>
+
+    <section class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <!-- Profile Card -->
+                <div class="profile-card text-center">
+                    <img src="https://www.shutterstock.com/image-vector/programmer-computer-expert-black-linear-600nw-2033137370.jpg" alt="avatar" class="rounded-circle img-fluid profile-img">
+                    <div class="name">Vivek Pal</div>
+                    <p class="profile-info"><i class="fas fa-briefcase"></i> Full Stack Developer</p>
+                    <p class="profile-info"><i class="fas fa-map-marker-alt"></i> Kanpur,UP,INDIA</p>
+                    <p class="profile-info"><i class="fas fa-envelope"></i>csvivekpal@gmail.com</p>
+                    <button id="edit-button" class="edit-btn">Edit Profile</button>
+                </div>
+
+                <!-- Profile Information Section -->
+                <div id="profile-info-section" class="mt-4">
+                    <h3>Personal Information</h3>
+                    <div class="profile-info">
+                        <p><strong>Name:</strong> <span id="user-name">Vivek Pal</span></p>
+                        <p><strong>Email:</strong> <span id="user-email">csvivekpal@gmail.com</span></p>
+                        <p><strong>Mobile:</strong> <span id="user-mobile">+91 9555772131</span></p>
+                        <p><strong>Gender:</strong> <span id="user-gender">Male</span></p>
+                        <p><strong>Education:</strong> <span id="user-education">Bachelor's in Computer Application</span></p>
+                        <p><strong>Experience:</strong> <span id="user-experience">5 years</span></p>
+                        <p><strong>Language:</strong> <span id="user-language">English, Hindi</span></p>
+                        <p><strong>Location:</strong> <span id="user-location">Kanpur,India</span></p>
+                    </div>
+                </div>
+
+                <!-- Edit Profile Form -->
+                <div id="edit-form-section" class="edit-form mt-4">
+                    <h3>Edit Profile</h3>
+                    <form id="edit-profile-form">
+                        <div class="mb-3">
+                            <input type="text" id="edit-name" class="form-control" value="John Doe" placeholder="Enter your name">
+                        </div>
+                        <div class="mb-3">
+                            <input type="email" id="edit-email" class="form-control" value="john.doe@example.com" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" id="edit-mobile" class="form-control" value="New York, USA" placeholder="Enter your mobile">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" id="edit-gender" class="form-control" value="Male" placeholder="Enter your gender">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" id="edit-education" class="form-control" value="Bachelor's in Computer Science" placeholder="Enter your education">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" id="edit-experience" class="form-control" value="5 years" placeholder="Enter your experience">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" id="edit-language" class="form-control" value="English, Spanish" placeholder="Enter your languages">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" id="edit-location" class="form-control" value="New York, USA" placeholder="Enter your location">
+                        </div>
+                        <button type="submit" class="save-btn">Save Changes</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <script>// Toggle edit form visibility
+        const editButton = document.getElementById("edit-button");
+        const profileInfoSection = document.getElementById("profile-info-section");
+        const editFormSection = document.getElementById("edit-form-section");
+        const editProfileForm = document.getElementById("edit-profile-form");
+
+        editButton.addEventListener("click", () => {
+            profileInfoSection.style.display = "none";
+            editFormSection.style.display = "block";
+        });
+
+        // Handle form submission
+        editProfileForm.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById("edit-name").value;
+            const email = document.getElementById("edit-email").value;
+            const mobile = document.getElementById("edit-mobile").value;
+            const gender = document.getElementById("edit-gender").value;
+            const education = document.getElementById("edit-education").value;
+            const experience = document.getElementById("edit-experience").value;
+            const language = document.getElementById("edit-language").value;
+            const location = document.getElementById("edit-location").value;
+
+            // Update profile information
+            document.getElementById("user-name").textContent = name;
+            document.getElementById("user-email").textContent = email;
+            document.getElementById("user-mobile").textContent = mobile;
+            document.getElementById("user-gender").textContent = gender;
+            document.getElementById("user-education").textContent = education;
+            document.getElementById("user-experience").textContent = experience;
+            document.getElementById("user-language").textContent = language;
+            document.getElementById("user-location").textContent = location;
+
+            // Hide the edit form and show updated profile
+            profileInfoSection.style.display = "block";
+            editFormSection.style.display = "none";
+        });</script>
+
+</body>
+</html>

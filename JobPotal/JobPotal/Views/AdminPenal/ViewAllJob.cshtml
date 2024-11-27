@@ -1,0 +1,57 @@
+﻿@model IEnumerable<JobPotal.Models.ViewAllJobs>
+
+@{
+    ViewBag.Title = "ViewAllJob";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.JobId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JobTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.JobDescription)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PostDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FinalDate)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.JobId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JobTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.JobDescription)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PostDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FinalDate) 
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new {  id=item.JobId }, new { @class = "btn btn-danger btn-sm" }) |
+            @Html.ActionLink("Details", "JobDetails", new { id = item.JobId }, new { @class = "btn btn-danger btn-sm" }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.JobId }, new { @class = "btn btn-danger btn-sm" })|
+            @Html.ActionLink("Block", "Delete", new { id = item.JobId }, new { @class = "btn btn-danger btn-sm" })
+
+        </td>
+    </tr>
+}
+
+</table>

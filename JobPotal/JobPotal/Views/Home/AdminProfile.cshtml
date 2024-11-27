@@ -1,0 +1,182 @@
+﻿
+@{
+    ViewBag.Title = "AdminProfile";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <!-- Add Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Add FontAwesome for icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <section style="background-color: #eee;">
+        <div class="container py-5">
+            <div class="row">
+                <div class="col">
+                    <nav aria-label="breadcrumb" class="bg-body-tertiary rounded-3 p-3 mb-4">
+                        <h4 style="text-align: center;"> Welcome To my Profile</h4>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-4">
+                    <!-- Profile Card -->
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava3.webp" alt="avatar" class="rounded-circle img-fluid profile-img">
+                            <h5 class="my-3">Vivek Pal</h5>
+                            <p class="text-muted mb-1">Full Stack Developer</p>
+                            <p class="text-muted mb-4">Bay Area, San Francisco, CA</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <button type="button" class="btn btn-primary">Follow</button>
+                                <button type="button" class="btn btn-outline-primary ms-1">Message</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links Card -->
+                    <div class="card mb-4 mb-lg-0">
+                        <div class="card-body p-0">
+                            <ul class="list-group list-group-flush rounded-3">
+                                <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                    <i class="fas fa-globe fa-lg text-warning"></i>
+                                    <p class="mb-0">https://mdbootstrap.com</p>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                    <i class="fab fa-github fa-lg text-body"></i>
+                                    <p class="mb-0">mdbootstrap</p>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                    <i class="fab fa-twitter fa-lg" style="color: #55acee;"></i>
+                                    <p class="mb-0">mdbootstrap</p>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                    <i class="fab fa-instagram fa-lg" style="color: #ac2bac;"></i>
+                                    <p class="mb-0">mdbootstrap</p>
+                                </li>
+                                <li class="list-group-item d-flex justify-content-between align-items-center p-3">
+                                    <i class="fab fa-facebook-f fa-lg" style="color: #3b5998;"></i>
+                                    <p class="mb-0">mdbootstrap</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <!-- Personal Information Card -->
+                    <div style="width: 100%; max-width: 600px; margin: 30px auto; background-color: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+                        <h1 style="text-align: center; color: #333;"></h1>
+                        <div style="margin-bottom: 20px;">
+                            <p style="font-size: 18px; margin: 10px 0;"><strong>Name:</strong> <span id="user-name">John </span></p>
+                            <p style="font-size: 18px; margin: 10px 0;"><strong>Email:</strong> <span id="user-email">joh g@example.com</span></p>
+                            <p style="font-size: 18px; margin: 10px 0;"><strong>Mobile:</strong> <span id="user-mobile">955732423424</span></p>
+                            <p style="font-size: 18px; margin: 10px 0;"><strong>Gender:</strong> <span id="user-gender">Mail</span></p>
+                            <p style="font-size: 18px; margin: 10px 0;"><strong>Education:</strong> <span id="user-education">BCA</span></p>
+                            <p style="font-size: 18px; margin: 10px 0;"><strong>Experience:</strong> <span id="user-experience">Fraser</span></p>
+                            <p style="font-size: 18px; margin: 10px 0;"><strong>Language:</strong> <span id="user-language">Hindi </span></p>
+                            <p style="font-size: 18px; margin: 10px 0;"><strong>Location:</strong> <span id="user-location">New York, USA</span></p>
+                        </div>
+
+                        <button id="edit-button" style="background-color: #ba1138; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px; margin-top: 10px;">Edit Profile</button>
+
+                        <!-- Edit Profile Form -->
+                        <div class="edit-form" style="display: none; margin-top: 20px;">
+                            <h2 style="color: #333;">Edit Profile</h2>
+                            <form id="edit-profile-form">
+                                <label for="name" style="display: block; margin: 10px 0;">Name:</label>
+                                <input type="text" id="edit-name" value="John Doe" required style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; font-size: 16px;">
+
+                                <label for="email" style="display: block; margin: 10px 0;">Email:</label>
+                                <input type="email" id="edit-email" value="john.doe@example.com" required style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; font-size: 16px;">
+
+                                <label for="location" style="display: block; margin: 10px 0;">Mobile:</label>
+                                <input type="text" id="edit-mobile" value="New York, USA" required style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; font-size: 16px;">
+                                <label for="location" style="display: block; margin: 10px 0;">Gender:</label>
+                                <input type="text" id="edit-gender" value="New York, USA" required style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; font-size: 16px;">
+                                <label for="location" style="display: block; margin: 10px 0;">Education:</label>
+                                <input type="text" id="edit-education" value="New York, USA" required style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; font-size: 16px;">
+                                <label for="location" style="display: block; margin: 10px 0;">Experience:</label>
+                                <input type="text" id="edit-experience" value="New York, USA" required style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; font-size: 16px;">
+                                <label for="location" style="display: block; margin: 10px 0;">Language:</label>
+                                <input type="text" id="edit-language" value="New York, USA" required style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; font-size: 16px;">
+                                <label for="location" style="display: block; margin: 10px 0;">Location:</label>
+                                <input type="text" id="edit-location" value="New York, USA" required style="width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: 1px solid #ccc; font-size: 16px;">
+
+                                <button type="submit" id="save-button" style="background-color: #008CBA; color: white; border: none; padding: 10px 20px; font-size: 16px; cursor: pointer; border-radius: 5px; margin-top: 10px;">Save</button>
+                            </form>
+                        </div>
+                    </div>
+                    <script>
+        // Selecting the buttons and elements
+        const editButton = document.getElementById("edit-button");
+        const saveButton = document.getElementById("save-button");
+        const profileInfo = document.querySelector(".profile-info");
+        const editForm = document.querySelector(".edit-form");
+        const editProfileForm = document.getElementById("edit-profile-form");
+
+        // Event listener to show the edit form
+        editButton.addEventListener("click", () => {
+            editForm.style.display = "block";  // Show the edit form
+            profileInfo.style.display = "none"; // Hide the profile information
+            editButton.style.display = "none"; // Hide the edit button
+        });
+
+        // Event listener to save the changes
+        editProfileForm.addEventListener("submit", (e) => {
+            e.preventDefault(); // Prevent form from submitting the traditional way
+
+            const name = document.getElementById("edit-name").value;
+            const email = document.getElementById("edit-email").value;
+            const mobile = document.getElementById("edit-mobile").value;
+            const gender = document.getElementById("edit-gender").value;
+            const education = document.getElementById("edit-education").value;
+            const experience = document.getElementById("edit-experience").value;
+            const language = document.getElementById("edit-language").value;
+            const location = document.getElementById("edit-location").value;
+
+            // Basic validation for empty fields
+            if (name === "" || email === "" || location === "") {
+                alert("Please fill in all fields.");
+                return;
+            }
+
+            // Updating the profile info with the new values
+            document.getElementById("user-name").textContent = name;
+            document.getElementById("user-email").textContent = email;
+            document.getElementById("user-mobile").textContent = mobile;
+            document.getElementById("user-gender").textContent = gender;
+            document.getElementById("user-education").textContent = education;
+            document.getElementById("user-experience").textContent = experience;
+            document.getElementById("user-language").textContent = language;
+            document.getElementById("user-location").textContent = location;
+
+            // Hide the edit form and show the updated profile
+            editForm.style.display = "none";
+            profileInfo.style.display = "block";
+            editButton.style.display = "inline-block"; // Show the edit button again
+        });
+                    </script>
+
+
+
+    </section>
+</body>
+</html>
+
