@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\manish\\source\\repos\\JobPotel\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5F96404C-6396-448E-A0A2-7C08D00ECD5B}|JobPotel\\JobPotel.csproj|c:\\users\\manish\\source\\repos\\jobpotel\\jobpotel\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F96404C-6396-448E-A0A2-7C08D00ECD5B}|JobPotel\\JobPotel.csproj|solutionrelative:jobpotel\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F96404C-6396-448E-A0A2-7C08D00ECD5B}|JobPotel\\JobPotel.csproj|c:\\users\\manish\\source\\repos\\jobpotel\\jobpotel\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F96404C-6396-448E-A0A2-7C08D00ECD5B}|JobPotel\\JobPotel.csproj|solutionrelative:jobpotel\\models\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F96404C-6396-448E-A0A2-7C08D00ECD5B}|JobPotel\\JobPotel.csproj|c:\\users\\manish\\source\\repos\\jobpotel\\jobpotel\\controllers\\adminpenalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5F96404C-6396-448E-A0A2-7C08D00ECD5B}|JobPotel\\JobPotel.csproj|solutionrelative:jobpotel\\controllers\\adminpenalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F96404C-6396-448E-A0A2-7C08D00ECD5B}|JobPotel\\JobPotel.csproj|c:\\users\\manish\\source\\repos\\jobpotel\\jobpotel\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{5F96404C-6396-448E-A0A2-7C08D00ECD5B}|JobPotel\\JobPotel.csproj|solutionrelative:jobpotel\\web.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F96404C-6396-448E-A0A2-7C08D00ECD5B}|JobPotel\\JobPotel.csproj|c:\\users\\manish\\source\\repos\\jobpotel\\jobpotel\\web.debug.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{5F96404C-6396-448E-A0A2-7C08D00ECD5B}|JobPotel\\JobPotel.csproj|solutionrelative:jobpotel\\web.debug.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5F96404C-6396-448E-A0A2-7C08D00ECD5B}|JobPotel\\JobPotel.csproj|c:\\users\\manish\\source\\repos\\jobpotel\\jobpotel\\web.release.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{5F96404C-6396-448E-A0A2-7C08D00ECD5B}|JobPotel\\JobPotel.csproj|solutionrelative:jobpotel\\web.release.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\manish\\source\\repos\\JobPotel\\JobPotel\\Models\\Login.cs",
+              "RelativeDocumentMoniker": "JobPotel\\Models\\Login.cs",
+              "ToolTip": "C:\\Users\\manish\\source\\repos\\JobPotel\\JobPotel\\Models\\Login.cs",
+              "RelativeToolTip": "JobPotel\\Models\\Login.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T08:01:58.083Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Web.Debug.config",
+              "DocumentMoniker": "C:\\Users\\manish\\source\\repos\\JobPotel\\JobPotel\\Web.Debug.config",
+              "RelativeDocumentMoniker": "JobPotel\\Web.Debug.config",
+              "ToolTip": "C:\\Users\\manish\\source\\repos\\JobPotel\\JobPotel\\Web.Debug.config",
+              "RelativeToolTip": "JobPotel\\Web.Debug.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-23T07:57:08.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Web.Release.config",
+              "DocumentMoniker": "C:\\Users\\manish\\source\\repos\\JobPotel\\JobPotel\\Web.Release.config",
+              "RelativeDocumentMoniker": "JobPotel\\Web.Release.config",
+              "ToolTip": "C:\\Users\\manish\\source\\repos\\JobPotel\\JobPotel\\Web.Release.config",
+              "RelativeToolTip": "JobPotel\\Web.Release.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-23T07:57:06.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Web.config",
+              "DocumentMoniker": "C:\\Users\\manish\\source\\repos\\JobPotel\\JobPotel\\Web.config",
+              "RelativeDocumentMoniker": "JobPotel\\Web.config",
+              "ToolTip": "C:\\Users\\manish\\source\\repos\\JobPotel\\JobPotel\\Web.config",
+              "RelativeToolTip": "JobPotel\\Web.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2024-11-23T07:55:47.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AdminPenalController.cs",
+              "DocumentMoniker": "C:\\Users\\manish\\source\\repos\\JobPotel\\JobPotel\\Controllers\\AdminPenalController.cs",
+              "RelativeDocumentMoniker": "JobPotel\\Controllers\\AdminPenalController.cs",
+              "ToolTip": "C:\\Users\\manish\\source\\repos\\JobPotel\\JobPotel\\Controllers\\AdminPenalController.cs",
+              "RelativeToolTip": "JobPotel\\Controllers\\AdminPenalController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T06:59:29.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\manish\\source\\repos\\JobPotel\\JobPotel\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "JobPotel\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\manish\\source\\repos\\JobPotel\\JobPotel\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "JobPotel\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAAowCQAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T06:52:08.393Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
