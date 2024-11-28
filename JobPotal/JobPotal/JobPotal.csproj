@@ -250,8 +250,10 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="LogicLayer\AddNewJobs.cs" />
+    <Compile Include="LogicLayer\UserRegisterLogic.cs" />
     <Compile Include="Models\Login.cs" />
     <Compile Include="Models\PostJobsModel.cs" />
+    <Compile Include="Models\UserRegister.cs" />
     <Compile Include="Models\ViewAllJobs.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -312,7 +314,6 @@
     <Content Include="Views\AdminPenal\Postjobs.cshtml" />
     <Content Include="Views\AdminPenal\AddNewJob.cshtml" />
     <Content Include="Views\AdminPenal\ViewAllJob.cshtml" />
-    <Content Include="Views\AdminPenal\JobDetails.cshtml" />
     <Content Include="Views\Home\LogIn.cshtml" />
     <Content Include="Views\Home\AdminProfile.cshtml" />
     <Content Include="Views\UserPenal\FindJobs.cshtml" />
@@ -322,6 +323,7 @@
     <Content Include="Views\Home\Contactus.cshtml" />
     <Content Include="Views\AdminPenal\AdminProfile.cshtml" />
     <Content Include="Views\Shared\JobDetails.cshtml" />
+    <Content Include="Views\Home\UserRegister.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

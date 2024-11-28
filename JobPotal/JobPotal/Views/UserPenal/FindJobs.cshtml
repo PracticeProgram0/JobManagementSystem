@@ -260,8 +260,51 @@
                                     </div>
                                     <div class="items-link items-link2 f-right">
                                         @*<a href="/JobDetails" ,new {id=item.JobId }>@item.JobType</a>*@
-                                        @Html.ActionLink(@item.JobType,"JobDetails", new { id = item.JobId }, new { @class = "items-link items-link2 f-right" })
-                                        <span>7 hours ago</span>
+                                        @Html.ActionLink(@item.JobType, "JobDetails", new { id = item.JobId }, new { @class = "items-link items-link2 f-right" })
+
+                                        @{
+                                            var diff = 0;
+                                            var msg = String.Empty;
+
+                                            var postDate = item.PostDate;
+                                            var currentDate = DateTime.Now;
+
+                                            var cYear = currentDate.Year;
+                                            var cMonth = currentDate.Month;
+                                            var cDate = currentDate.Day;
+
+                                            var postedDate = Convert.ToDateTime(postDate);
+                                            var pYear = postedDate.Year;
+                                            var pMonth = postedDate.Month;
+                                            var pDate = postedDate.Day;
+
+                                            if (cYear == pYear)
+                                            {
+                                                if (cMonth == pMonth)
+                                                {
+                                                    if (cDate == pDate)
+                                                    {
+
+                                                    }
+                                                    else
+                                                    {
+                                                        diff = cDate - pDate;
+                                                        msg = diff + "day ago";
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    diff = cMonth - pMonth;
+                                                    msg = diff + "month ago";
+                                                }
+                                            }
+                                            else
+                                            {
+                                                diff = cYear - pYear;
+                                                msg = diff + "Year ago";
+                                            }
+                                        }
+                                        <span> @msg </span>
                                     </div>
                                 </div>                               
                             }

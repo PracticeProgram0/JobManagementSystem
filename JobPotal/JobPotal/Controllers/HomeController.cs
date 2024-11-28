@@ -62,5 +62,17 @@ namespace JobPotal.Controllers
             FormsAuthentication.SignOut();
             return RedirectToAction("Index");
         }
+
+        public ActionResult UserRegister()
+        {
+            return View();
+        }
+        [HttpPost]
+        [Route("UserRegister")]
+        public ActionResult UserRegister(UserRegister data)
+        {
+
+            return View();
+        }
     }
 }

@@ -36,6 +36,7 @@ namespace JobPotal.Controllers
         [Route("JobDetails")]        
         public ActionResult JobDetails(string id)
         {
+            ViewBag.LayOut = "UserPannal";
             var responce = new AddNewJobs();
             var result = responce.SelectJobByID(id);
             return View(result);
