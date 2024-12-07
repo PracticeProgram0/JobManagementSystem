@@ -9,7 +9,7 @@ namespace JobPotal.DataBase_Work
 {
     public class DBWork
     {
-        public readonly string Conn = " Data Source=Hp;Initial Catalog=JobPotel;Integrated Security=True";
+        public readonly string Conn = "Data Source=DESKTOP-S59K6LU\\SQLEXPRESS;Initial Catalog=JobPotel;Integrated Security=True";
         public bool AddOrUpdateNewJob(string query)
         {
             using (SqlConnection sqlConnection=new SqlConnection(Conn))

@@ -1,5 +1,6 @@
 ﻿using JobPotal.DataBase_Work;
 using JobPotal.LogicLayer;
+using JobPotal.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -41,6 +42,15 @@ namespace JobPotal.Controllers
             var result = responce.SelectJobByID(id);
             return View(result);
         }
+        [Route("ApplyFilter")]
+        [HttpPost]
+        public ActionResult ApplyFilter(JobsFilter filter)
+        {
+             var filterData = new AddNewJobs().ApplyFilter(filter);
+             return View("FindAJob", filterData);
+            
+        }
+
 
     }
 }

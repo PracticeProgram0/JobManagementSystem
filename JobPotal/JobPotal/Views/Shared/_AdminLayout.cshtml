@@ -66,10 +66,115 @@
                                 </div>
                                 <!-- Header-btn -->
                                 <div class="header-btn d-none f-right d-lg-block">
-                                    
-                                    <a href="/logout" class="btn head-btn2">Logout</a>
+
+                                    @*<a href="/logout" class="btn head-btn2">Logout</a>*@
                                 </div>
+                                <head>
+                                    <style>                                      
+                                        /* Profile Dropdown Container */
+                                        .profile-dropdown {
+                                            position: relative;
+                                            display: inline-block;
+                                        }
+
+                                        /* Hide the menu by default */
+                                        .profile-menu {
+                                            display: none;
+                                            position: absolute;
+                                            top: 50px;
+                                            right: 0;
+                                            background-color: #fff;
+                                            box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+                                            border-radius: 5px;
+                                            z-index: 1000;
+                                            list-style-type: none;
+                                            padding: 10px;
+                                            min-width: 230px;
+                                        }
+
+                                            /* Style the menu items */
+                                            .profile-menu li {
+                                                padding: 8px 10px;
+                                                color: #333;                                              
+                                                font-size: 14px;
+                                               
+
+                                            }
+
+                                                .profile-menu li a {
+                                                    /* color: #007bff;*/                                                  
+                                                    color: antiquewhite;
+                                                    text-decoration: none;
+                                                    font-weight: bold;
+                                                }
+
+                                                    .profile-menu li a:hover { 
+                                                        color: black;
+                                                    }
+
+                                        /* Show the menu on hover */
+                                        .profile-dropdown:hover .profile-menu {
+                                            display: block;
+                                        }
+
+                                        /* Profile Icon Container */
+                                        .profile-icon-container {
+                                            display: flex;
+                                            align-items: center;
+                                        }
+
+                                        .profile-image {
+                                            border-radius: 50%;
+                                        }
+
+                                        .admin-badge {
+                                            margin-left: 10px;
+                                            font-weight: bold;
+                                            color: #007bff;
+                                        }
+                                        .buttonlog {
+                                           
+                                            background-color: #ff0000;                                           
+                                            padding: 10px 20px;
+                                            font-size: 16px;
+                                            border-radius: 5px;
+                                        }
+
+                                    </style>
+                                </head>                                                 
+
+                                <!-- Header-btn -->
+                                <div class="header-btn d-none f-right d-lg-block">
+                                    @*@if (User.Identity.IsAuthenticated)
+                                    {*@
+                                        <div class="profile-dropdown">
+                                            <a href="@Url.Action("AdminProfile", "AdminPenal")" class="profile-link" title="Admin Profile">
+                                                <div class="profile-icon-container">
+                                                    <img src="https://www.aarondavidpolley.com/wp-content/uploads/2020/07/231-2311105_free-icon-download-account-manager-icon-png.png"  width="40" height="37"
+                                                         alt="Admin Profile Image" class="profile-image">
+                                                    <span class="admin-badge"></span>
+                                                </div>
+                                            </a>
+                                             @*Hover Menu*@ 
+                                            <ul class="profile-menu">
+                                                <li><strong>Name :</strong> Vivek Pal </li>
+                                                <li><strong>Email :</strong>  @User.Identity.Name</li>
+                                                <li><a class="buttonlog"   href="/logout">Logout</a></li>
+                                            </ul>
+                                        </div>
+                                    @*}*@
+                                    @*else
+                                    {
+                                        <a href="@Url.Action("Login", "Account")" class="btn head-btn2" aria-label="Login">Login</a>
+                                        <a href="@Url.Action("Register", "Account")" class="btn head-btn1" aria-label="Register">Register</a>
+                                    }*@
+                                </div>
+                                @*admin profile*@
+
+
                             </div>
+
+                          
                         </div>
                         <!-- Mobile Menu -->
                         <div class="col-12">

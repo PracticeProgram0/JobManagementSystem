@@ -44,176 +44,179 @@
                             </div>
                         </div>
                     </div>
-                    <!-- Job Category Listing start -->
-                    <div class="job-category-listing mb-50">
-                        <!-- single one -->
-                        <div class="single-listing">
-                            <div class="small-section-tittle2">
-                                <h4>Job Category</h4>
-                            </div>
-                            <!-- Select job items start -->
-                            <div class="select-job-items2">
-                                <select name="select">
-                                    <option value="">All Category</option>
-                                    <option value="Design & Creative">Design & Creative</option>
-                                    <option value="Design & Development">Design & Development</option>
-                                    <option value="Sales & Marketing">Sales & Marketing</option>
-                                    <option value="Mobile Application">Mobile Application</option>
-                                    <option value="Construction">Construction</option>
-                                    <option value="Information Technology">Information Technology</option>
-                                    <option value="Real Estate">Real Estate</option>
-                                    <option value="Content Writer">Content Writer</option>
-                                </select>
-                            </div>
-                            <!--  Select job items End-->
-                            <!-- select-Categories start -->
-                            <div class="select-Categories pt-80 pb-50">
+                    <form action="/ApplyFilter" method="post">
+                        
+                        <!-- Job Category Listing start -->
+                        <div class="job-category-listing mb-50">
+                            <!-- single one -->
+                            <div class="single-listing">
                                 <div class="small-section-tittle2">
-                                    <h4>Job Type</h4>
+                                    <h4>Job Category</h4>
                                 </div>
-                                <label class="container">
-                                    Full Time
-                                    <input type="checkbox" checked="checked active">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="container">
-                                    Part Time
-                                    <input type="checkbox"value="PartTime" name="PartTime">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="container">
-                                    Remote
-                                    <input type="checkbox" value="Remote" name="Remote">
-                                    <span class="checkmark"  ></span>
-                                </label>
-                                <label class="container">
-                                    Freelance
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
-                                </label>
+                                <!-- Select job items start -->
+                                <div class="select-job-items2">
+                                    <select id="SelectCategory" name="SelectCategory">
+                                        <option value="">All Category</option>
+                                        <option value="Design & Creative">Design & Creative</option>
+                                        <option value="Design & Development">Design & Development</option>
+                                        <option value="Sales & Marketing">Sales & Marketing</option>
+                                        <option value="Mobile Application">Mobile Application</option>
+                                        <option value="Construction">Construction</option>
+                                        <option value="Information Technology">Information Technology</option>
+                                        <option value="Real Estate">Real Estate</option>
+                                        <option value="Content Writer">Content Writer</option>
+                                    </select>
+                                </div>
+                                <!--  Select job items End-->
+                                <!-- select-Categories start -->
+                                <div class="select-Categories pt-80 pb-50">
+                                    <div class="small-section-tittle2">
+                                        <h4>Job Type</h4>
+                                    </div>
+                                    <label class="container">
+                                        Full Time
+                                        <input type="checkbox" checked="checked active">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="container">
+                                        Part Time
+                                        <input type="checkbox" value="PartTime" name="PartTime">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="container">
+                                        Remote
+                                        <input type="checkbox" value="Remote" name="Remote">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="container">
+                                        Freelance
+                                        <input type="checkbox">
+                                        <span class="checkmark" ></span>
+                                    </label>
+                                </div>
+                                <!-- select-Categories End -->
                             </div>
-                            <!-- select-Categories End -->
-                        </div>
-                        <!-- single two -->
-                        <div class="single-listing">
-                            <div class="small-section-tittle2">
-                                <h4>Job Location</h4>
-                            </div>
-                            <!-- Select job items start -->
-                            <div class="select-job-items2">
-                                <select name="select">
-                                    <option value="">Anywhere</option>
-                                    <option value="">KANPUR NAGAR</option>
-                                    <option value="">LUCKNOW</option>
-                                    <option value="">DELHI</option>
-                                    <option value="">NODIA</option>
-                                </select>
-                            </div>
-                            <!--  Select job items End-->
-                            <!-- select-Categories start -->
-                            <div class="select-Categories pt-80 pb-50">
+                            <!-- single two -->
+                            <div class="single-listing">
                                 <div class="small-section-tittle2">
-                                    <h4>Experience</h4>
+                                    <h4>Job Location</h4>
                                 </div>
-                                <label class="container">
-                                    Freser
-                                    <input type="checkbox" checked="checked active">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="container">
-                                    1-2 Years
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="container">
-                                    2-3 Years
-                                    <input type="checkbox" >
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="container">
-                                    3-6 Years
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="container">
-                                    6-more..
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
-                                </label>
+                                <!-- Select job items start -->
+                                <div class="select-job-items2">
+                                    <select id="JobLocation" name="JobLocation">
+                                        <option value="">Anywhere</option>
+                                        <option value="Noida">Noida</option>
+                                        <option value="Delhi">Delhi</option>
+                                        <option value="Kanpur">Kanpur</option>
+                                        <option value="Lucknow">Lucknow</option>
+                                    </select>
+                                </div>
+                                <!--  Select job items End-->
+                                <!-- select-Categories start -->
+                                <div class="select-Categories pt-80 pb-50">
+                                    <div class="small-section-tittle2">
+                                        <h4>Experience</h4>
+                                    </div>
+                                    <label class="container">
+                                        Fresher
+                                        <input type="checkbox" value="Fresher" name="Fresher" checked="checked active">
+                                        <span class="checkmark" name="Fresher"></span>
+                                    </label>
+                                    <label class="container">
+                                        1-2 Years
+                                        <input type="checkbox" value="OneToTwoYear" name="OneToTwoYear">
+                                        <span class="checkmark" name="OneToTwoYear"></span>
+                                    </label>
+                                    <label class="container">
+                                        2-3 Years
+                                        <input type="checkbox" value="TwoToThreeYear" name="TwoToThreeYear">
+                                        <span class="checkmark" name="TwoToThreeYear"></span>
+                                    </label>
+                                    <label class="container">
+                                        3-6 Years
+                                        <input type="checkbox" value="ThreeToSixYear" name="ThreeToSixYear">
+                                        <span class="checkmark" name="ThreeToSixYear"></span>
+                                    </label>
+                                    <label class="container">
+                                        6-more..
+                                        <input type="checkbox" value="morethen6" name="MoreThenSixYear">
+                                        <span class="checkmark" name="MoreThenSixYear"></span>
+                                    </label>
+                                </div>
+                                <!-- select-Categories End -->
                             </div>
-                            <!-- select-Categories End -->
-                        </div>
-                        <!-- single three -->
-                        <div class="single-listing">
-                            <!-- select-Categories start -->
-                            <div class="select-Categories pb-50">
-                                <div class="small-section-tittle2">
-                                    <h4>Posted Within</h4>
+                            <!-- single three -->
+                            <div class="single-listing">
+                                <!-- select-Categories start -->
+                                <div class="select-Categories pb-50">
+                                    <div class="small-section-tittle2">
+                                        <h4>Posted Within</h4>
+                                    </div>
+                                    <label class="container">
+                                        Any
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="container">
+                                        Today
+                                        <input type="checkbox" checked="checked active">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="container">
+                                        Last 2 days
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="container">
+                                        Last 3 days
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="container">
+                                        Last 5 days
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                    <label class="container">
+                                        Last 10 days
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
                                 </div>
-                                <label class="container">
-                                    Any
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="container">
-                                    Today
-                                    <input type="checkbox" checked="checked active">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="container">
-                                    Last 2 days
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="container">
-                                    Last 3 days
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="container">
-                                    Last 5 days
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
-                                </label>
-                                <label class="container">
-                                    Last 10 days
-                                    <input type="checkbox">
-                                    <span class="checkmark"></span>
-                                </label>
+                                <div class="apply-btn2 ">                                  
+                                    <input type="submit" value="Apply Filter" class="btn head-btn1" />
+                                </div>
+                               </form>
+                                <!-- select-Categories End -->
                             </div>
-                            <div class="apply-btn2 ">
-                                <a href="#" class="btn">Apply Filter</a>
-                            </div>                           
-                            <!-- select-Categories End -->
-                        </div>
-                        <div class="single-listing">
-                            <!-- Range Slider Start -->
-                            <aside class="left_widgets p_filter_widgets price_rangs_aside sidebar_box_shadow">
-                                <div class="small-section-tittle2">
-                                    <h4>Filter Jobs</h4>
-                                </div>
-                                <div class="widgets_inner">
-                                    <div class="range_item">
-                                        <!-- <div id="slider-range"></div> -->
-                                        <input type="text" class="js-range-slider" value="" />
-                                        <div class="d-flex align-items-center">
-                                            <div class="price_text">
-                                                <p>Price :</p>
-                                            </div>
-                                            <div class="price_value d-flex justify-content-center">
-                                                <input type="text" class="js-input-from" id="amount" readonly />
-                                                <span>to</span>
-                                                <input type="text" class="js-input-to" id="amount" readonly />
+                            <div class="single-listing">
+                                <!-- Range Slider Start -->
+                                <aside class="left_widgets p_filter_widgets price_rangs_aside sidebar_box_shadow">
+                                    <div class="small-section-tittle2">
+                                        <h4>Filter Jobs</h4>
+                                    </div>
+                                    <div class="widgets_inner">
+                                        <div class="range_item">
+                                            <!-- <div id="slider-range"></div> -->
+                                            <input type="text" class="js-range-slider" value="" />
+                                            <div class="d-flex align-items-center">
+                                                <div class="price_text">
+                                                    <p>Price :</p>
+                                                </div>
+                                                <div class="price_value d-flex justify-content-center">
+                                                    <input type="text" class="js-input-from" id="amount" readonly />
+                                                    <span>to</span>
+                                                    <input type="text" class="js-input-to" id="amount" readonly />
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </aside>
-                            <!-- Range Slider End --> 
+                                </aside>
+                                <!-- Range Slider End -->
+                            </div>
                         </div>
-                    </div>
-                    <!-- Job Category Listing End -->
-                </div>
+                        <!-- Job Category Listing End -->
+</div>
                 <!-- Right content -->
                 <div class="col-xl-9 col-lg-9 col-md-8">
                     <!-- Featured_job_start -->
@@ -266,17 +269,24 @@
                                             var diff = 0;
                                             var msg = String.Empty;
 
-                                            var postDate = item.PostDate;
+                                            // var postDate = item.PostDate;
+                                            var postDate = Convert.ToDateTime(item.PostDate);
                                             var currentDate = DateTime.Now;
 
                                             var cYear = currentDate.Year;
                                             var cMonth = currentDate.Month;
                                             var cDate = currentDate.Day;
+                                            var cHour = currentDate.Hour;
+                                            var cMinute = currentDate.Minute;
+                                            var cSecond = currentDate.Second;
 
                                             var postedDate = Convert.ToDateTime(postDate);
                                             var pYear = postedDate.Year;
                                             var pMonth = postedDate.Month;
                                             var pDate = postedDate.Day;
+                                            var pHour = currentDate.Hour;
+                                            var pMinute = currentDate.Minute;
+                                            var pSecond = currentDate.Second;
 
                                             if (cYear == pYear)
                                             {
@@ -284,27 +294,54 @@
                                                 {
                                                     if (cDate == pDate)
                                                     {
+                                                        if (cHour == pHour)
+                                                        {
+                                                            if (cMinute == pMinute)
+                                                            {
+                                                                if (cSecond == pSecond)
+                                                                {
+                                                                    diff = cSecond - pSecond;
+                                                                    msg = diff + " Second ago";
+                                                                }
+                                                                else
+                                                                {
+                                                                    diff = cSecond - pSecond;
+                                                                    msg = diff + " Second ago";
+                                                                }
 
+                                                            }
+                                                            else
+                                                            {
+                                                                diff = cMinute - pMinute;
+                                                                msg = diff + " Minute ago";
+                                                            }
+
+                                                        }
+                                                        else
+                                                        {
+                                                            diff = cHour - pHour;
+                                                            msg = diff + " Hour ago";
+                                                        }
                                                     }
                                                     else
                                                     {
                                                         diff = cDate - pDate;
-                                                        msg = diff + "day ago";
+                                                        msg = diff + " day ago";
                                                     }
                                                 }
                                                 else
                                                 {
                                                     diff = cMonth - pMonth;
-                                                    msg = diff + "month ago";
+                                                    msg = diff + " month ago";
                                                 }
                                             }
                                             else
                                             {
                                                 diff = cYear - pYear;
-                                                msg = diff + "Year ago";
+                                                msg = diff + " Year ago";
                                             }
                                         }
-                                        <span> @msg </span>
+                                        <span> @msg </span>                                      
                                     </div>
                                 </div>                               
                             }

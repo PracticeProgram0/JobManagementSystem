@@ -64,6 +64,41 @@ namespace JobPotal.LogicLayer
             var query = $"update jobs set JobTitle= '{data.JobTitle}' , CompanyName = '{data.CompanyName}' , Location = '{data.Location}' , JobType = '{data.JobType}',Education = '{data.Education}', skills = '{data.Skills}' , SalaryRange = '{data.SalaryRange}',JobDescription = '{data.JobDescription}' , PostDate = '{data.PostDate}' , FinalDate = '{data.FinalDate}' where jobid = {data.JobId}";
             return new DBWork().AddOrUpdateNewJob(query);
         }
+        public List<ViewAllJobs> ApplyFilter(JobsFilter filter)
+        {
+            var jobLocation = filter.JobLocation;
+            var jobCategory = filter.SelectCategory;
+            var jobtype = string.Empty;
+            var jobexperience = string.Empty;
+
+            var jobType = new List<string>()
+            {
+               filter.Fresher, filter.PartTime,filter.FullTime,filter.Remote,filter.Freelance
+            };
+
+            var jobExperience = new List<string>()
+            {
+                filter.OneToTwoYear,filter.TwoToThreeYear,filter.ThreeToSixYear,filter.MoreThenSixYear
+            };
+
+            foreach (var item in jobType)
+            {
+                if (!string.IsNullOrEmpty(item))
+                    jobtype += item + ",";
+            }
+
+            foreach (var item in jobExperience)
+            {
+                if (!string.IsNullOrEmpty(item))
+                    jobexperience += item + ",";
+            }
+
+
+            var query = $"select * from jobs where jobCategory = '{jobCategory}' and jobLocation = '{jobLocation}' and jobType = '{jobtype}' and experience = '{jobexperience}'";
+
+            return new DBWork().SelectJobs(query);
+
+        }
 
     }
 }
