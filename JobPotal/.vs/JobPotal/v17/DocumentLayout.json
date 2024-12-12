@@ -1,22 +1,22 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\HP\\Desktop\\GITHUB FILE FOLDER\\JobPotal\\JobPotal\\",
+  "WorkspaceRootPath": "C:\\Users\\HP\\Documents\\GitHub\\JobManagementSystem\\JobPotal\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AD515F0A-978E-4E2E-9924-2B5C6165B79A}|JobPotal\\JobPotal.csproj|c:\\users\\hp\\desktop\\github file folder\\jobpotal\\jobpotal\\jobpotal\\controllers\\userpenalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{AD515F0A-978E-4E2E-9924-2B5C6165B79A}|JobPotal\\JobPotal.csproj|c:\\users\\hp\\documents\\github\\jobmanagementsystem\\jobpotal\\jobpotal\\controllers\\userpenalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AD515F0A-978E-4E2E-9924-2B5C6165B79A}|JobPotal\\JobPotal.csproj|solutionrelative:jobpotal\\controllers\\userpenalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD515F0A-978E-4E2E-9924-2B5C6165B79A}|JobPotal\\JobPotal.csproj|C:\\Users\\HP\\Desktop\\GITHUB FILE FOLDER\\JobPotal\\JobPotal\\jobpotal\\database work\\dbwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD515F0A-978E-4E2E-9924-2B5C6165B79A}|JobPotal\\JobPotal.csproj|solutionrelative:jobpotal\\database work\\dbwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD515F0A-978E-4E2E-9924-2B5C6165B79A}|JobPotal\\JobPotal.csproj|C:\\Users\\HP\\Documents\\GitHub\\JobManagementSystem\\JobPotal\\jobpotal\\models\\jobsfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD515F0A-978E-4E2E-9924-2B5C6165B79A}|JobPotal\\JobPotal.csproj|solutionrelative:jobpotal\\models\\jobsfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD515F0A-978E-4E2E-9924-2B5C6165B79A}|JobPotal\\JobPotal.csproj|C:\\Users\\HP\\Desktop\\GITHUB FILE FOLDER\\JobPotal\\JobPotal\\jobpotal\\views\\userpenal\\findjobs.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{AD515F0A-978E-4E2E-9924-2B5C6165B79A}|JobPotal\\JobPotal.csproj|C:\\Users\\HP\\Documents\\GitHub\\JobManagementSystem\\JobPotal\\jobpotal\\views\\userpenal\\findjobs.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{AD515F0A-978E-4E2E-9924-2B5C6165B79A}|JobPotal\\JobPotal.csproj|solutionrelative:jobpotal\\views\\userpenal\\findjobs.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD515F0A-978E-4E2E-9924-2B5C6165B79A}|JobPotal\\JobPotal.csproj|C:\\Users\\HP\\Desktop\\GITHUB FILE FOLDER\\JobPotal\\JobPotal\\jobpotal\\models\\jobsfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD515F0A-978E-4E2E-9924-2B5C6165B79A}|JobPotal\\JobPotal.csproj|solutionrelative:jobpotal\\models\\jobsfilter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AD515F0A-978E-4E2E-9924-2B5C6165B79A}|JobPotal\\JobPotal.csproj|C:\\Users\\HP\\Documents\\GitHub\\JobManagementSystem\\JobPotal\\jobpotal\\database work\\dbwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AD515F0A-978E-4E2E-9924-2B5C6165B79A}|JobPotal\\JobPotal.csproj|solutionrelative:jobpotal\\database work\\dbwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,11 +32,11 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "UserPenalController.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\GITHUB FILE FOLDER\\JobPotal\\JobPotal\\JobPotal\\Controllers\\UserPenalController.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\JobManagementSystem\\JobPotal\\JobPotal\\Controllers\\UserPenalController.cs",
               "RelativeDocumentMoniker": "JobPotal\\Controllers\\UserPenalController.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\GITHUB FILE FOLDER\\JobPotal\\JobPotal\\JobPotal\\Controllers\\UserPenalController.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\JobManagementSystem\\JobPotal\\JobPotal\\Controllers\\UserPenalController.cs",
               "RelativeToolTip": "JobPotal\\Controllers\\UserPenalController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAAAAAA",
+              "ViewState": "AQIAABwAAAAAAAAAAAAAADQAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T02:53:52.313Z",
               "IsPinned": true,
@@ -44,13 +44,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "DBWork.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\GITHUB FILE FOLDER\\JobPotal\\JobPotal\\JobPotal\\DataBase Work\\DBWork.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\JobManagementSystem\\JobPotal\\JobPotal\\DataBase Work\\DBWork.cs",
               "RelativeDocumentMoniker": "JobPotal\\DataBase Work\\DBWork.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\GITHUB FILE FOLDER\\JobPotal\\JobPotal\\JobPotal\\DataBase Work\\DBWork.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\JobManagementSystem\\JobPotal\\JobPotal\\DataBase Work\\DBWork.cs",
               "RelativeToolTip": "JobPotal\\DataBase Work\\DBWork.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAzAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-05T11:08:31.258Z"
             },
@@ -58,9 +58,9 @@
               "$type": "Document",
               "DocumentIndex": 2,
               "Title": "FindJobs.cshtml",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\GITHUB FILE FOLDER\\JobPotal\\JobPotal\\JobPotal\\Views\\UserPenal\\FindJobs.cshtml",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\JobManagementSystem\\JobPotal\\JobPotal\\Views\\UserPenal\\FindJobs.cshtml",
               "RelativeDocumentMoniker": "JobPotal\\Views\\UserPenal\\FindJobs.cshtml",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\GITHUB FILE FOLDER\\JobPotal\\JobPotal\\JobPotal\\Views\\UserPenal\\FindJobs.cshtml",
+              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\JobManagementSystem\\JobPotal\\JobPotal\\Views\\UserPenal\\FindJobs.cshtml",
               "RelativeToolTip": "JobPotal\\Views\\UserPenal\\FindJobs.cshtml",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -68,13 +68,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "JobsFilter.cs",
-              "DocumentMoniker": "C:\\Users\\HP\\Desktop\\GITHUB FILE FOLDER\\JobPotal\\JobPotal\\JobPotal\\Models\\JobsFilter.cs",
+              "DocumentMoniker": "C:\\Users\\HP\\Documents\\GitHub\\JobManagementSystem\\JobPotal\\JobPotal\\Models\\JobsFilter.cs",
               "RelativeDocumentMoniker": "JobPotal\\Models\\JobsFilter.cs",
-              "ToolTip": "C:\\Users\\HP\\Desktop\\GITHUB FILE FOLDER\\JobPotal\\JobPotal\\JobPotal\\Models\\JobsFilter.cs",
+              "ToolTip": "C:\\Users\\HP\\Documents\\GitHub\\JobManagementSystem\\JobPotal\\JobPotal\\Models\\JobsFilter.cs",
               "RelativeToolTip": "JobPotal\\Models\\JobsFilter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAzAAAAAAAAAA==",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAbAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-30T08:01:45.47Z"
             }
